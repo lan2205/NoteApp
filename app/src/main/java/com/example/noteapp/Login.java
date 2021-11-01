@@ -11,12 +11,14 @@ import android.widget.TextView;
 public class Login extends AppCompatActivity {
 
     private TextView tv_signup;
+    private TextView tv_forgot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        tv_forgot = (TextView) findViewById(R.id.tv_forgot);
         tv_signup = (TextView) findViewById(R.id.tv_signup);
         tv_signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,7 +26,16 @@ public class Login extends AppCompatActivity {
                 Intent intent = new Intent(Login.this,Register.class);
                 startActivity(intent);
             }
+            });
+
+
+        tv_forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, ForgotPassword2.class);
+                startActivity(intent);
+            }
         });
 
-    }
+        }
 }

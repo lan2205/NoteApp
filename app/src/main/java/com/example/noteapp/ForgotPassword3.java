@@ -6,20 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
-public class Register2 extends AppCompatActivity {
-    private Button btn_done;
+public class ForgotPassword3 extends AppCompatActivity {
+    private Button btn_donepass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register2);
+        setContentView(R.layout.activity_forgot_password3);
 
-        btn_done = (Button) findViewById(R.id.btn_done);
-        btn_done.setOnClickListener(new View.OnClickListener() {
+        btn_donepass = (Button) findViewById(R.id.btn_donepass);
+        btn_donepass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register2.this, Login.class);
+                Intent intent = new Intent(ForgotPassword3.this, Login.class);
                 startActivity(intent);
             }
         });
