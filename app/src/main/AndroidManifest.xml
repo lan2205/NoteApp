@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp">
         <activity
+            android:name=".ForgotPassword1"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/Theme.NoteApp.NoActionBar" />
+        <activity
             android:name=".Register2"
             android:exported="true" />
         <activity
