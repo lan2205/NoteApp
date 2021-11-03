@@ -11,7 +11,7 @@
   <TextView
       android:id="@+id/textView3"
       android:layout_width="115dp"
-      android:layout_height="38dp"
+      android:layout_height="37dp"
       android:fontFamily="@font/poppins_semibold"
       android:gravity="center"
       android:text="My Note"
@@ -35,6 +35,19 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.032" />
+
+  <ImageView
+      android:id="@+id/imageView7"
+      android:layout_width="37dp"
+      android:layout_height="37dp"
+      android:background="#00B67B7B"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.042"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.023"
+      app:srcCompat="@drawable/ic_baseline_menu_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
