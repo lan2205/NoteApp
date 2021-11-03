@@ -32,17 +32,22 @@
         android:id="@+id/btn_signin"
         android:layout_width="337dp"
         android:layout_height="57dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="84dp"
         android:background="#50C2C9"
+
         android:fontFamily="@font/poppins_semibold"
         android:text="Sign in "
-        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        android:textSize="19dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
-
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -57,10 +62,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <TextView
         android:id="@+id/textView5"
