@@ -14,9 +14,6 @@
             android:exported="false"
             android:label="@string/title_activity_settings" />
         <activity
-            android:name=".Home.Setting"
-            android:exported="false" />
-        <activity
             android:name=".Home.Home"
             android:exported="false" />
         <activity
@@ -24,9 +21,6 @@
             android:exported="true" />
         <activity
             android:name=".ForgotPassword.ForgotPassword2"
-            android:exported="true" />
-        <activity
-            android:name=".FogotPassword2"
             android:exported="true" />
         <activity
             android:name=".ForgotPassword.ForgotPassword1"
