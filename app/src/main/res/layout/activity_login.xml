@@ -106,7 +106,7 @@
 
         <EditText
             android:id="@+id/Email"
-            android:layout_width="300dp"
+            android:layout_width="337dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_regular"
             android:hint="Enter email"
@@ -114,6 +114,7 @@
             android:textColor="@color/black"
             android:textSize="16dp"
 
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.432"
@@ -124,35 +125,39 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout8"
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="337dp"
-        android:layout_height="45dp"
+        android:layout_height="55dp"
         android:background="@drawable/textview_backgroud"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673">
+        app:layout_constraintVertical_bias="0.658"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
 
-
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Password"
-            android:layout_width="300dp"
+            android:layout_width="337dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/textview_backgroud"
             android:fontFamily="@font/poppins_regular"
-            android:hint="Enter password"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:textColor="@color/black"
+            android:hint="Enter password"
             android:textSize="16dp"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintVertical_bias="0.656">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tv_forgot"
@@ -186,6 +191,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.736" />
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
