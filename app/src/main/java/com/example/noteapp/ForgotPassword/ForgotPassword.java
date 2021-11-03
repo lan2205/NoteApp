@@ -1,4 +1,4 @@
-package com.example.noteapp;
+package com.example.noteapp.ForgotPassword;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.noteapp.Login.Login;
+import com.example.noteapp.R;
 
 public class ForgotPassword extends AppCompatActivity {
     private Button btn_continue_forgot;
@@ -22,7 +25,7 @@ public class ForgotPassword extends AppCompatActivity {
         btn_continue_forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ForgotPassword.this,ForgotPassword1.class);
+                Intent intent = new Intent(ForgotPassword.this, ForgotPassword1.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +34,7 @@ public class ForgotPassword extends AppCompatActivity {
         tv_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ForgotPassword.this,Login.class);
+                Intent intent = new Intent(ForgotPassword.this, Login.class);
                 startActivity(intent);
             }
 

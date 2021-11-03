@@ -1,4 +1,4 @@
-package com.example.noteapp;
+package com.example.noteapp.Register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.noteapp.Login.Login;
+import com.example.noteapp.R;
 
 public class Register extends AppCompatActivity {
 
@@ -25,7 +28,7 @@ public class Register extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register.this,Register1.class);
+                Intent intent = new Intent(Register.this, Register1.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +37,7 @@ public class Register extends AppCompatActivity {
         tv_signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register.this,Login.class);
+                Intent intent = new Intent(Register.this, Login.class);
                 startActivity(intent);
             }
 

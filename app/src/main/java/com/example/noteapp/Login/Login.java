@@ -1,12 +1,14 @@
-package com.example.noteapp;
+package com.example.noteapp.Login;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.noteapp.ForgotPassword.ForgotPassword;
+import com.example.noteapp.R;
+import com.example.noteapp.Register.Register;
 
 public class Login extends AppCompatActivity {
 
@@ -23,7 +25,7 @@ public class Login extends AppCompatActivity {
         tv_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login.this,Register.class);
+                Intent intent = new Intent(Login.this, Register.class);
                 startActivity(intent);
             }
             });
