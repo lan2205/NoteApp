@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp">
         <activity
+            android:name=".Note"
+            android:exported="false" />
+        <activity
             android:name=".Home.Settings"
             android:exported="false"
             android:label="@string/title_activity_settings" />

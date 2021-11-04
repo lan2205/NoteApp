@@ -201,7 +201,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/constraintConfirmPassword"
         android:layout_width="337dp"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="190dp"
         android:background="@drawable/textview_backgroud"
         app:hintEnabled="false"
@@ -215,14 +215,15 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ConfirmPW"
-            android:layout_width="337dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/textview_backgroud"
             android:fontFamily="@font/poppins_regular"
             android:hint="Confirm password"
             android:inputType="textPassword"
             android:textColor="@color/black"
-            android:textSize="16dp"
+
+            android:ems="5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.432"
