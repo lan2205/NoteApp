@@ -19,7 +19,7 @@
         android:clipToOutline="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_1" />
+        app:srcCompat="@drawable/ic_newnote" />
 
     <TextView
         android:id="@+id/my_notes"
@@ -47,14 +47,14 @@
         app:srcCompat="@drawable/ic_menu" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/search_note"
         android:layout_width="35dp"
         android:layout_height="30dp"
         android:layout_marginStart="348dp"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img" />
+        app:srcCompat="@drawable/ic_search" />
 
 
 
