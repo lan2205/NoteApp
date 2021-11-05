@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp">
         <activity
-            android:name=".Search"
-            android:exported="true" />
-        <activity
             android:name=".Note"
             android:exported="false" />
         <activity
