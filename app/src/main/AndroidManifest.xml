@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteApp">
         <activity
-            android:name=".CreateNote"
+            android:name=".Home.CreateNote"
             android:exported="false" />
         <activity
             android:name=".Note"
