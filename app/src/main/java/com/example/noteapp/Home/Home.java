@@ -3,14 +3,10 @@ package com.example.noteapp.Home;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.noteapp.CreateNote;
-import com.example.noteapp.ForgotPassword.ForgotPassword;
-import com.example.noteapp.Login.Login;
 import com.example.noteapp.R;
 
 public class Home extends AppCompatActivity {
