@@ -48,7 +48,7 @@
                 android:id="@+id/inputNoteTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginStart="30dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:hint="Note Title"
@@ -69,7 +69,7 @@
                 android:fontFamily="@font/poppins"
                 android:textColor="#73FFFFFF"
                 android:textSize="12dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="40dp"
                 app:layout_constraintEnd_toEndOf="@id/inputNoteTitle"
                 app:layout_constraintStart_toStartOf="@+id/inputNoteTitle"
                 app:layout_constraintTop_toTopOf="@id/inputNoteTitle" />
