@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="3dp"
-                android:background="null"
+                android:background="@null"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="My Account"
                 android:textColor="@color/white"
