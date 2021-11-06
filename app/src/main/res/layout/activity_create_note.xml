@@ -74,6 +74,19 @@
                 app:layout_constraintEnd_toEndOf="@id/inputNoteTitle"
                 app:layout_constraintStart_toStartOf="@+id/inputNoteTitle"
                 app:layout_constraintTop_toTopOf="@id/inputNoteTitle" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageNote"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/inputNoteTitle"/>
+
             <EditText
                 android:id="@+id/inputNote"
                 android:layout_width="match_parent"
@@ -92,7 +105,9 @@
                 android:inputType="textMultiLine"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="@id/inputNoteTitle"/>
+                app:layout_constraintTop_toTopOf="@id/inputNoteTitle"
+                app:layout_constraintTop_toBottomOf="@id/imageNote"
+                />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
