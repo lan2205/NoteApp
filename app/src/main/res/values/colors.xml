@@ -10,6 +10,7 @@
     <color name="background">#253548</color>
     <color name="bgButton">#50C2C9</color>
     <color name="gray_background">#80C4C4C4</color>
-    
+    <color name="btn_gray_background">#80FFFFFF</color>
+    <color name="black_30">#66000000</color>
 
 </resources>

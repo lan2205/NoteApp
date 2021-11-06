@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/drawable/btn_gray_layout.xml" value="0.202734375" />
         <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/drawable/gray_background_layout.xml" value="0.202734375" />
         <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/drawable/ic_eye.xml" value="0.163671875" />
         <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/drawable/textview_backgroud.xml" value="0.202734375" />
@@ -13,8 +14,9 @@
         <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/layout/activity_register1.xml" value="0.2" />
         <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/layout/activity_register2.xml" value="0.264" />
-        <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/layout/activity_setting.xml" value="0.2" />
+        <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/layout/activity_setting.xml" value="0.176" />
         <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/layout/activity_start.xml" value="0.2" />
+        <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/layout/settings_activity.xml" value="0.27400336889387983" />
         <entry key="..\:/Tai Lieu Hoc Tap/PHAT TRIEN THIET BI DI DONG/PROJECT/NoteApp/app/src/main/res/xml/root_preferences.xml" value="0.16" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/eyes.xml" value="0.20208333333333334" />
