@@ -45,7 +45,7 @@
         android:layout_marginTop="188dp"
         android:gravity="center"
         android:text="Please check your email and enter the code to complete the account registration"
-        android:textColor="#FFFFFFFF"
+        android:textColor="@color/white_75"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,6 @@
         android:layout_height="wrap_content"
         android:text="Can't see the code?"
         android:textColor="#ffffff"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.372"

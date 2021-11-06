@@ -13,7 +13,7 @@
     <color name="background_note_default">#CBDFBD</color>
     <color name="yellow">#FFB703</color>
     <color name="green">#4F772D</color>
-    <color name="red">#BA181B</color>
+    <color name="red">#e5383b</color>
     <color name="purple">#AAA1C8</color>
     <color name="brown">#BAA587</color>
     <color name="orange">#F8961E</color>
@@ -22,6 +22,7 @@
     <color name="pink">#F47068</color>
     <color name="beige">#FFF3B0</color>
     <color name="green_light">#97A97C</color>
-
+    <color name="white_75">#BFFFFFFF</color>
+    <color name="background_more">#8042707D</color>
 
 </resources>
