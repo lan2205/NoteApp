@@ -7,9 +7,6 @@
     android:background="#253548"
     tools:context=".Login.Login">
 
-
-
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="253dp"
