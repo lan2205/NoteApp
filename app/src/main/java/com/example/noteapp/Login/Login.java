@@ -1,10 +1,13 @@
 package com.example.noteapp.Login;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,7 +24,6 @@ public class Login extends AppCompatActivity {
     private TextView tv_forgot;
     private ImageView iv_show_hide_password;
     private Button btN_Login;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
