@@ -1,14 +1,12 @@
 package com.example.noteapp.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.example.noteapp.R;
-import com.example.noteapp.Search;
 
 public class Home extends AppCompatActivity {
 
@@ -26,6 +24,7 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         img_Search = (ImageView) findViewById(R.id.Search);
         img_Search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,5 +33,6 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

@@ -1,15 +1,13 @@
-package com.example.noteapp;
+package com.example.noteapp.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
-import com.example.noteapp.Home.Home;
 import com.example.noteapp.R;
-import com.example.noteapp.Search;
+
 import android.widget.TextView;
 
 public class Search extends AppCompatActivity {
