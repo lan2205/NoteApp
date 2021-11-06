@@ -38,9 +38,29 @@ public class CreateNote extends AppCompatActivity {
         img_backHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                saveNote();
-                Intent intent = new Intent(CreateNote.this, Home.class);
-                startActivity(intent);
+                if(!inputNoteText.getText().toString().isEmpty())
+                {
+                    saveNote();
+                    if(!inputNoteTitle.getText().toString().isEmpty())
+                    {
+                        Intent intent = new Intent(CreateNote.this, Home.class);
+                        startActivity(intent);
+                    }
+                }
+                else
+                {
+                    if(!inputNoteTitle.getText().toString().isEmpty())
+                    {
+                        saveNote();
+                        Intent intent = new Intent(CreateNote.this, Home.class);
+                        startActivity(intent);
+                    }
+                    else
+                    {
+                        Intent intent = new Intent(CreateNote.this, Home.class);
+                        startActivity(intent);
+                    }
+                }
             }
         });
         img_More.setOnClickListener(new View.OnClickListener() {
@@ -54,18 +74,16 @@ public class CreateNote extends AppCompatActivity {
                 new SimpleDateFormat("EEEE, dd MMMM yyyy HH:mm a",Locale.getDefault())
                 .format(new Date())
         );
-
     }
-
     private void saveNote(){
         if(inputNoteTitle.getText().toString().trim().isEmpty()){
             Toast.makeText(this,"Note title can't be empty!",Toast.LENGTH_SHORT).show();
             return;
         }
-        else if(inputNoteText.getText().toString().trim().isEmpty()){
-            Toast.makeText(this,"Note can't be empty!",Toast.LENGTH_SHORT).show();
-            return;
-        }
+//        else if(inputNoteText.getText().toString().trim().isEmpty()){
+//            Toast.makeText(this,"Note can't be empty!",Toast.LENGTH_SHORT).show();
+//            return;
+//        }
         final Note note = new Note();
         note.setTitle(inputNoteTitle.getText().toString());
         note.setDateTime(tv_dateTime.getText().toString());
