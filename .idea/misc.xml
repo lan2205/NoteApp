@@ -18,6 +18,8 @@
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/background_note_color3.xml" value="0.1" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/background_note_color4.xml" value="0.1" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/background_note_color5.xml" value="0.1" />
+        <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/background_seaarch2.xml" value="0.1921875" />
+        <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/background_search.xml" value="0.1921875" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/eyes.xml" value="0.20208333333333334" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/ic_done.xml" value="0.1" />
@@ -27,7 +29,8 @@
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/ic_search.xml" value="0.24010416666666667" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/search.xml" value="0.202734375" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/drawable/textview_backgroud.xml" value="0.202734375" />
-        <entry key="..\:/Test/NoteApp/app/src/main/res/layout/activity_create_note.xml" value="0.4806949806949807" />
+        <entry key="..\:/Test/NoteApp/app/src/main/res/layout/activity_create_note.xml" value="0.1" />
+        <entry key="..\:/Test/NoteApp/app/src/main/res/layout/activity_createnote.xml" value="0.180078125" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/activity_forgot_password1.xml" value="0.187890625" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/activity_forgot_password2.xml" value="0.176" />
@@ -42,7 +45,7 @@
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/activity_setting.xml" value="0.23854166666666668" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/activity_start.xml" value="0.2" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/item_container_note.xml" value="0.1" />
-        <entry key="..\:/Test/NoteApp/app/src/main/res/layout/layout_miscellaneous.xml" value="0.193359375" />
+        <entry key="..\:/Test/NoteApp/app/src/main/res/layout/layout_miscellaneous.xml" value="0.1" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/login.xml" value="0.2234375" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/settings_activity.xml" value="0.187890625" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/xml/root_preferences.xml" value="0.190625" />

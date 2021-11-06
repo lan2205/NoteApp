@@ -9,11 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.noteapp.Database.NotesDatabase;
 import com.example.noteapp.Entities.Note;
 import com.example.noteapp.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -74,6 +77,8 @@ public class CreateNote extends AppCompatActivity {
                 new SimpleDateFormat("EEEE, dd MMMM yyyy HH:mm a",Locale.getDefault())
                 .format(new Date())
         );
+
+        initNote();
     }
     private void saveNote(){
         if(inputNoteTitle.getText().toString().trim().isEmpty()){
@@ -106,5 +111,21 @@ public class CreateNote extends AppCompatActivity {
             }
         }
         new SaveNoteTask().execute();
+    }
+    private void initNote(){
+        final LinearLayout layoutNote = findViewById(R.id.layoutNote);
+        final BottomSheetBehavior<LinearLayout> bottomSheetBehavior = BottomSheetBehavior.from(layoutNote);
+
+        layoutNote.findViewById(R.id.text_Empty).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                if(bottomSheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED){
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                }
+                else {
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                }
+            }
+        });
     }
 }

@@ -2,20 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layoutNote"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/backdgroup_miscellaneous"
+    android:orientation="vertical"
+    app:behavior_peekHeight = "@dimen/_40sdp"
     app:layout_behavior="@string/bottom_sheet_behavior">
 
     <TextView
-        android:id="@+id/textMiscellaneous"
+        android:id="@+id/text_Empty"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
-        android:fontFamily="@font/poppins"
         android:gravity="center"
+        android:includeFontPadding="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="@dimen/_5sdp"
         android:includeFontPadding="false"
-        android:text="Miscellaneous"
+        android:text="Background"
         android:textColor="@color/white"
         android:textSize="@dimen/_13ssp"/>
     <LinearLayout
@@ -24,16 +32,37 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_10sdp"
         android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewColor5"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/background_note_color5" />
+
+            <ImageView
+                android:id="@+id/imageColor5"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_done" />
+        </FrameLayout>
 
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
+
             <View
                 android:id="@+id/viewColor1"
                 android:layout_width="@dimen/_35sdp"
                 android:layout_height="@dimen/_35sdp"
                 android:background="@drawable/background_note_color1" />
+
             <ImageView
                 android:id="@+id/imageColor1"
                 android:layout_width="@dimen/_35sdp"
@@ -47,29 +76,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
-            <View
-                android:id="@+id/viewColor2"
-                android:layout_width="@dimen/_35sdp"
-                android:layout_height="@dimen/_35sdp"
-                android:background="@drawable/background_note_color2" />
-            <ImageView
-                android:id="@+id/imageColor2"
-                android:layout_width="@dimen/_35sdp"
-                android:layout_height="@dimen/_35sdp"
-                android:contentDescription="@string/app_name"
-                android:padding="@dimen/_10sdp"
-                android:src="@drawable/ic_done" />
-        </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
             <View
                 android:id="@+id/viewColor3"
                 android:layout_width="@dimen/_35sdp"
                 android:layout_height="@dimen/_35sdp"
                 android:background="@drawable/background_note_color3" />
+
             <ImageView
                 android:id="@+id/imageColor3"
                 android:layout_width="@dimen/_35sdp"
@@ -83,11 +96,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
+
             <View
                 android:id="@+id/viewColor4"
                 android:layout_width="@dimen/_35sdp"
                 android:layout_height="@dimen/_35sdp"
                 android:background="@drawable/background_note_color4" />
+
             <ImageView
                 android:id="@+id/imageColor4"
                 android:layout_width="@dimen/_35sdp"
@@ -97,9 +112,29 @@
                 android:src="@drawable/ic_done" />
         </FrameLayout>
 
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
+            <View
+                android:id="@+id/viewColor2"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/background_note_color2" />
+
+            <ImageView
+                android:id="@+id/imageColor2"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_done" />
+        </FrameLayout>
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>
