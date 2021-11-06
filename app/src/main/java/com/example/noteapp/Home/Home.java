@@ -30,6 +30,9 @@ public class Home extends AppCompatActivity {
 
     private ImageView img_NewNote;
     private ImageView img_Search;
+    private ImageView ic_menu;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +64,15 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home.this, Search.class);
+                startActivity(intent);
+            }
+        });
+
+        ic_menu = (ImageView) findViewById(R.id.ic_menu);
+        ic_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Settings.class);
                 startActivity(intent);
             }
         });
