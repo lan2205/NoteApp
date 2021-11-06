@@ -97,23 +97,7 @@
                 android:src="@drawable/ic_done" />
         </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <View
-                android:id="@+id/viewColor5"
-                android:layout_width="@dimen/_35sdp"
-                android:layout_height="@dimen/_35sdp"
-                android:background="@drawable/background_note_color5" />
-            <ImageView
-                android:id="@+id/imageColor5"
-                android:layout_width="@dimen/_35sdp"
-                android:layout_height="@dimen/_35sdp"
-                android:contentDescription="@string/app_name"
-                android:padding="@dimen/_10sdp"
-                android:src="@drawable/ic_done" />
-        </FrameLayout>
+       
 
     </LinearLayout>
 
