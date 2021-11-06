@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#253548"
-    tools:context=".Search">
+    tools:context=".Home.Search">
 
 
     <LinearLayout
@@ -22,8 +22,8 @@
             android:id="@+id/ed_search"
             android:layout_width="305dp"
             android:layout_height="45dp"
-            android:background="@drawable/textview_backgroud"
-            android:drawableLeft="@drawable/ic_search"
+            android:background="@drawable/background_search"
+            android:drawableLeft="@drawable/ic_search_mini"
             android:drawableTint="#80000000"
             android:hint="Search"
             android:textColor="@color/white"
@@ -53,7 +53,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/back_ground_search" />
+        app:srcCompat="@drawable/background_seaarch2" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
