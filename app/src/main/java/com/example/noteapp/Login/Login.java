@@ -62,16 +62,27 @@ public class Login extends AppCompatActivity {
         btN_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String User = "tienxinxan";
-                String pass = "123";
-                if (Username.getText().toString().equals(User) && Password.getText().toString().equals(pass)) {
-                    Toast.makeText(getApplicationContext(), "Successfull! Welcome " +User, Toast.LENGTH_LONG).show();
+//                String User = "tienxinxan";
+//                String pass = "123";
+//
+//                if(Username.getText().toString().isEmpty()){
+//
+//                    Toast.makeText(getApplicationContext(), "Please enter Username ! ", Toast.LENGTH_LONG).show();
+//                }
+//                else if (Password.getText().toString().isEmpty())
+//                {
+//                    Toast.makeText(getApplicationContext(), "Please enter Password ", Toast.LENGTH_LONG).show();
+//                }
+//                else if(Username.getText().toString().equals(User) && Password.getText().toString().equals(pass)){
+//
+//                    Toast.makeText(getApplicationContext(), "Successfull! Welcome " +User, Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(Login.this, Home.class);
                     startActivity(intent);
-                } else {
-                    Toast.makeText(getApplicationContext(), "Wrong account or password", Toast.LENGTH_LONG).show();
-                }
-
+//                }
+//                else
+//                {
+//                    Toast.makeText(getApplicationContext(), "Wrong account or password", Toast.LENGTH_LONG).show();
+//                }
             }
         });
     }

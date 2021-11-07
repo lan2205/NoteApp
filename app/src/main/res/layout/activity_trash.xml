@@ -23,8 +23,8 @@
 
             <ImageView
                 android:id="@+id/ic_back"
-                android:layout_width="33dp"
-                android:layout_height="33dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 app:srcCompat="@drawable/ic_back" />
 
             <TextView
@@ -34,17 +34,18 @@
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Trash"
+                android:layout_marginTop="2dp"
                 android:textColor="@color/white"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:text="Empty"
                 android:textAllCaps="false"
                 android:textColor="@color/white_75"
-                android:textSize="18dp"
-                android:fontFamily="@font/poppins_bold"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins"
                 android:background="@drawable/gray_background_layout"/>
 
         </LinearLayout>
