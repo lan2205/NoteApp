@@ -62,8 +62,8 @@ public class Home extends AppCompatActivity {
         img_Search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent(Home.this, Search.class);
-                startActivity(intent2);
+                Intent intent = new Intent(Home.this, Search.class);
+                startActivity(intent);
             }
         });
 

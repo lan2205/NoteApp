@@ -22,7 +22,7 @@
             android:exported="false" />
         <activity
             android:name=".Home.Search"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".Home.CreateNote"
             android:exported="false"/>
