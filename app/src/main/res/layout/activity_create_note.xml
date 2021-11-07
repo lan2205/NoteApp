@@ -65,6 +65,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
+            <View
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@drawable/background_indicator"
+                app:layout_constraintBottom_toBottomOf="@id/inputNoteTitle"
+                app:layout_constraintEnd_toStartOf="@+id/inputNoteTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/inputNoteTitle" />
+
             <TextView
                 android:id="@+id/textDateTime"
                 android:layout_width="0dp"
