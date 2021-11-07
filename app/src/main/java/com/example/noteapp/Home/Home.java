@@ -8,6 +8,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.telecom.Call;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -44,6 +45,13 @@ public class Home extends AppCompatActivity {
                 Intent intent = new Intent(Home.this, CreateNote.class);
                 startActivity(intent);
             }
+        });
+
+        ImageView imageAddNoteMain = findViewById(R.id.newNote);
+        imageAddNoteMain.setOnClickListener((v)->{
+            startActivityForResult(new Intent(getApplicationContext(), CreateNote.class),
+                    REQUEST_CODE_ADD_NOTE
+            );
         });
 
 
