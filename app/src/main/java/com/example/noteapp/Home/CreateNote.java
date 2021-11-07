@@ -120,7 +120,7 @@ public class CreateNote extends AppCompatActivity {
         final LinearLayout layoutNote = findViewById(R.id.layoutNote);
         final BottomSheetBehavior<LinearLayout> bottomSheetBehavior = BottomSheetBehavior.from(layoutNote);
 
-        layoutNote.findViewById(R.id.text_Empty).setOnClickListener(new View.OnClickListener(){
+        layoutNote.findViewById(R.id.imgPull).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 if(bottomSheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED){
