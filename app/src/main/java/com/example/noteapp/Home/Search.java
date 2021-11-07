@@ -26,7 +26,7 @@ public class Search extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-        tv_cancel = (TextView) findViewById(R.id.tv_cancel);
+
         tv_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

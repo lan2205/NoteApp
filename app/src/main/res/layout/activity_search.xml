@@ -8,41 +8,15 @@
     tools:context=".Home.Search">
 
 
-    <LinearLayout
-        android:id="@+id/search"
-        android:layout_width="305dp"
-        android:layout_height="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059">
-        <EditText
-            android:id="@+id/ed_search"
-            android:layout_width="305dp"
-            android:layout_height="45dp"
-            android:background="@drawable/background_search"
-            android:drawableLeft="@drawable/ic_search_mini"
-            android:drawableTint="#80000000"
-            android:hint="Search"
-            android:textColor="@color/white"
-            android:textSize="16dp"
-            android:imeOptions="actionDone"
-            android:importantForAutofill="no"
-            android:includeFontPadding="false"
-            android:inputType="text"
-            android:paddingStart="10dp"
-            android:textColorHint="#80000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.099"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.059" />
-
-    </LinearLayout>
-    
+        app:srcCompat="@drawable/ic_back" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -70,21 +44,42 @@
         app:layout_constraintTop_toTopOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/tv_cancel"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:fontFamily="@font/poppins_regular"
-        android:gravity="top"
-        android:text="Cancel"
-        android:textColor="#50C2C9"
+    <EditText
+        android:id="@+id/ed_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background_search"
+        android:drawableLeft="@drawable/ic_search_mini"
+        android:drawableTint="#80000000"
+        android:hint="Search"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:includeFontPadding="false"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#80000000"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_outline_cancel_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
