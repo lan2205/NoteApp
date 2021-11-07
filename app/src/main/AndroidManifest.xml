@@ -15,6 +15,9 @@
         android:theme="@style/Theme.NoteApp"
         tools:targetApi="q">
         <activity
+            android:name=".Home.Search"
+            android:exported="false"/>
+        <activity
             android:name=".Home.CreateNote"
             android:exported="false" />
         <activity
