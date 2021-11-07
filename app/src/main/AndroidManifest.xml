@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.noteapp">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,8 +15,14 @@
         android:theme="@style/Theme.NoteApp"
         tools:targetApi="q">
         <activity
+            android:name=".Home.Trash"
+            android:exported="true" />
+        <activity
+            android:name=".Home.SetPassword"
+            android:exported="false" />
+        <activity
             android:name=".Home.Search"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Home.CreateNote"
             android:exported="false"/>

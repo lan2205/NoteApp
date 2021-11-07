@@ -16,7 +16,7 @@ import com.example.noteapp.R;
 
 public class Settings extends AppCompatActivity {
 
-    private ImageView ic_back;
+    private ImageView ic_back,ic_gotoTrash;
     private TextView tv_logout;
     private Button btn_setpassword;
 
@@ -52,6 +52,14 @@ public class Settings extends AppCompatActivity {
             }
         });
 
+        ic_gotoTrash = (ImageView) findViewById(R.id.ic_gotoTrash);
+        ic_gotoTrash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Settings.this, Trash.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
