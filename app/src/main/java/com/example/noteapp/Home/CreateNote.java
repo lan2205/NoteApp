@@ -211,9 +211,7 @@ public class CreateNote extends AppCompatActivity {
 
             }
         });
-
-
-
+        
         layoutNote.findViewById(R.id.viewColor1).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -283,10 +281,7 @@ public class CreateNote extends AppCompatActivity {
         GradientDrawable gradientDrawable =(GradientDrawable) indicator.getBackground();
         gradientDrawable.setColor(Color.parseColor(selectedNoteColor));
     }
-//    private void setTextColor(){
-//        GradientDrawable gradientDrawable =(GradientDrawable) inputNoteText.;
-//        gradientDrawable.setColor(Color.parseColor(selectedTextColor));
-//    }
+
 
 
 }
