@@ -9,13 +9,12 @@
     tools:context=".Home.Home">
 
 
-
     <TextView
         android:id="@+id/my_notes"
         android:layout_width="140dp"
         android:layout_height="35dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="top"
         android:text="My Notes"
@@ -26,23 +25,23 @@
 
     <ImageView
         android:id="@+id/ic_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="26dp"
+        android:layout_width="25dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_menu" />
 
     <ImageView
         android:id="@+id/Search"
-        android:layout_width="35dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="348dp"
-        android:layout_marginTop="30dp"
-        android:clipToOutline="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="28dp"
+        android:clipToOutline="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_search" />
@@ -51,25 +50,24 @@
         android:id="@+id/notesRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/_65sdp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginTop="@dimen/_60sdp"
         android:clipToPadding="false"
         android:paddingStart="0dp"
         android:paddingEnd="@dimen/_12sdp"
         android:paddingBottom="@dimen/_12sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="24dp"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
     </androidx.recyclerview.widget.RecyclerView>
+
     <ImageView
         android:id="@+id/newNote"
-        android:layout_width="69dp"
-        android:layout_height="68dp"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="304dp"
