@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +29,8 @@ public class CreateNote extends AppCompatActivity {
     private ImageView img_More;
     private TextView tv_dateTime;
     private EditText inputNoteTitle, inputNoteText;
-    private String selectedNoteColor;
+    private String selectedNoteColor, selectedTextColor;
+    private View indicator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,7 @@ public class CreateNote extends AppCompatActivity {
         tv_dateTime = (TextView)findViewById(R.id.textDateTime);
         inputNoteTitle = (EditText)findViewById(R.id.inputNoteTitle);
         inputNoteText = (EditText)findViewById(R.id.inputNote);
+        indicator = findViewById(R.id.indicator);
 
         img_backHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +85,10 @@ public class CreateNote extends AppCompatActivity {
         );
 
         selectedNoteColor = "#CBDFBD";
+        selectedTextColor = "#FFFFFF";
         initNote();
+        setIndicatorColor();
+
     }
     private void saveNote(){
         if(inputNoteTitle.getText().toString().trim().isEmpty()){
@@ -137,40 +144,112 @@ public class CreateNote extends AppCompatActivity {
         final ImageView imageColor3 = layoutNote.findViewById(R.id.imageColor3);
         final ImageView imageColor4 = layoutNote.findViewById(R.id.imageColor4);
         final ImageView imageColor5 = layoutNote.findViewById(R.id.imageColor5);
+        final ImageView imageTextColor1 = layoutNote.findViewById(R.id.imageTextColor1);
+        final ImageView imageTextColor2 = layoutNote.findViewById(R.id.imageTextColor2);
+        final ImageView imageTextColor3 = layoutNote.findViewById(R.id.imageTextColor3);
+        final ImageView imageTextColor4 = layoutNote.findViewById(R.id.imageTextColor4);
+        final ImageView imageTextColor5 = layoutNote.findViewById(R.id.imageTextColor5);
+
+        layoutNote.findViewById(R.id.viewTextColor1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectedTextColor = "#FFFFFFFF";
+                imageTextColor1.setImageResource(R.drawable.ic_done2);
+                imageTextColor2.setImageResource(0);
+                imageTextColor3.setImageResource(0);
+                imageTextColor4.setImageResource(0);
+                imageTextColor5.setImageResource(0);
+                inputNoteText.setTextColor(Color.parseColor(selectedTextColor));
+            }
+        });
+        layoutNote.findViewById(R.id.viewTextColor2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectedTextColor = "#F8961E";
+                imageTextColor2.setImageResource(R.drawable.ic_done2);
+                imageTextColor1.setImageResource(0);
+                imageTextColor3.setImageResource(0);
+                imageTextColor4.setImageResource(0);
+                imageTextColor5.setImageResource(0);
+                inputNoteText.setTextColor(Color.parseColor(selectedTextColor));
+            }
+        });
+        layoutNote.findViewById(R.id.viewTextColor3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectedTextColor = "#4F772D";
+                imageTextColor3.setImageResource(R.drawable.ic_done2);
+                imageTextColor1.setImageResource(0);
+                imageTextColor2.setImageResource(0);
+                imageTextColor4.setImageResource(0);
+                imageTextColor5.setImageResource(0);
+                inputNoteText.setTextColor(Color.parseColor(selectedTextColor));
+            }
+        });
+        layoutNote.findViewById(R.id.viewTextColor4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectedTextColor = "#FFF3B0";
+                imageTextColor4.setImageResource(R.drawable.ic_done2);
+                imageTextColor1.setImageResource(0);
+                imageTextColor2.setImageResource(0);
+                imageTextColor3.setImageResource(0);
+                imageTextColor5.setImageResource(0);
+                inputNoteText.setTextColor(Color.parseColor(selectedTextColor));
+            }
+        });
+        layoutNote.findViewById(R.id.viewTextColor5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectedTextColor = "#90E0EF";
+                imageTextColor5.setImageResource(R.drawable.ic_done2);
+                imageTextColor1.setImageResource(0);
+                imageTextColor2.setImageResource(0);
+                imageTextColor3.setImageResource(0);
+                imageTextColor4.setImageResource(0);
+                inputNoteText.setTextColor(Color.parseColor(selectedTextColor));
+
+            }
+        });
+
+
 
         layoutNote.findViewById(R.id.viewColor1).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                selectedNoteColor = "#80C4C4C4";
+                selectedNoteColor = "#CBDFBD";
                 imageColor1.setImageResource(R.drawable.ic_done);
                 imageColor2.setImageResource(0);
                 imageColor3.setImageResource(0);
                 imageColor4.setImageResource(0);
                 imageColor5.setImageResource(0);
+                setIndicatorColor();
             }
         });
 
         layoutNote.findViewById(R.id.viewColor2).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                selectedNoteColor = "#CBDFBD";
+                selectedNoteColor = "#FFB703";
                 imageColor2.setImageResource(R.drawable.ic_done);
                 imageColor1.setImageResource(0);
                 imageColor3.setImageResource(0);
                 imageColor4.setImageResource(0);
                 imageColor5.setImageResource(0);
+                setIndicatorColor();
             }
         });
 
         layoutNote.findViewById(R.id.viewColor3).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                selectedNoteColor = "#90E0EF";
+                selectedNoteColor = "#52b69a";
                 imageColor3.setImageResource(R.drawable.ic_done);
                 imageColor2.setImageResource(0);
                 imageColor1.setImageResource(0);
                 imageColor4.setImageResource(0);
                 imageColor5.setImageResource(0);
+                setIndicatorColor();
             }
         });
 
@@ -183,22 +262,31 @@ public class CreateNote extends AppCompatActivity {
                 imageColor3.setImageResource(0);
                 imageColor1.setImageResource(0);
                 imageColor5.setImageResource(0);
+                setIndicatorColor();
             }
         });
 
         layoutNote.findViewById(R.id.viewColor5).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                selectedNoteColor = "#FFB703";
+                selectedNoteColor = "#80C4C4C4";
                 imageColor5.setImageResource(R.drawable.ic_done);
                 imageColor2.setImageResource(0);
                 imageColor3.setImageResource(0);
                 imageColor4.setImageResource(0);
-                imageColor1.setImageResource(0);
+                setIndicatorColor();
             }
         });
 
     }
+    private void setIndicatorColor(){
+        GradientDrawable gradientDrawable =(GradientDrawable) indicator.getBackground();
+        gradientDrawable.setColor(Color.parseColor(selectedNoteColor));
+    }
+//    private void setTextColor(){
+//        GradientDrawable gradientDrawable =(GradientDrawable) inputNoteText.;
+//        gradientDrawable.setColor(Color.parseColor(selectedTextColor));
+//    }
 
 
 }
