@@ -232,7 +232,7 @@
                 android:layout_height="@dimen/_35sdp"
                 android:contentDescription="@string/app_name"
                 android:padding="@dimen/_10sdp"
-                android:src="@drawable/ic_done" />
+                android:src="@drawable/ic_done2"/>
         </FrameLayout>
 
         <FrameLayout
