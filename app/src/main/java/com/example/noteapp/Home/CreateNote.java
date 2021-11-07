@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +28,7 @@ public class CreateNote extends AppCompatActivity {
     private ImageView img_More;
     private TextView tv_dateTime;
     private EditText inputNoteTitle, inputNoteText;
-    private String selectedNoteColor;
+    private String selectedNoteColor, selectedTextColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +83,9 @@ public class CreateNote extends AppCompatActivity {
 
         selectedNoteColor = "#CBDFBD";
         initNote();
+        //selectedTextColor = "#FFFFFF";
+        //initText();
+
     }
     private void saveNote(){
         if(inputNoteTitle.getText().toString().trim().isEmpty()){
@@ -116,6 +120,90 @@ public class CreateNote extends AppCompatActivity {
         }
         new SaveNoteTask().execute();
     }
+//    private void initText() {
+//        final LinearLayout layoutTextColor = findViewById(R.id.layoutTextColor);
+//        final BottomSheetBehavior<LinearLayout> bottomSheetBehavior1 = BottomSheetBehavior.from(layoutTextColor);
+//
+//        layoutTextColor.findViewById(R.id.imgPull).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (bottomSheetBehavior1.getState() != BottomSheetBehavior.STATE_EXPANDED) {
+//                    bottomSheetBehavior1.setState(BottomSheetBehavior.STATE_EXPANDED);
+//                } else {
+//                    bottomSheetBehavior1.setState(BottomSheetBehavior.STATE_COLLAPSED);
+//                }
+//            }
+//        });
+//        final ImageView imageTextColor1 = layoutTextColor.findViewById(R.id.imageTextColor1);
+//        final ImageView imageTextColor2 = layoutTextColor.findViewById(R.id.imageTextColor2);
+//        final ImageView imageTextColor3 = layoutTextColor.findViewById(R.id.imageTextColor3);
+//        final ImageView imageTextColor4 = layoutTextColor.findViewById(R.id.imageTextColor4);
+//        final ImageView imageTextColor5 = layoutTextColor.findViewById(R.id.imageTextColor5);
+//
+//        layoutTextColor.findViewById(R.id.viewTextColor1).setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//                selectedTextColor = "#FFFFFF";
+//                imageTextColor1.setImageResource(R.drawable.ic_done2);
+//                imageTextColor2.setImageResource(0);
+//                imageTextColor3.setImageResource(0);
+//                imageTextColor4.setImageResource(0);
+//                imageTextColor5.setImageResource(0);
+//                inputNoteText.setTextColor(Color.WHITE);
+//            }
+//        });
+//        layoutTextColor.findViewById(R.id.viewTextColor2).setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//                selectedTextColor = "#FFFFFF";
+//                imageTextColor2.setImageResource(R.drawable.ic_done2);
+//                imageTextColor1.setImageResource(0);
+//                imageTextColor3.setImageResource(0);
+//                imageTextColor4.setImageResource(0);
+//                imageTextColor5.setImageResource(0);
+//                inputNoteText.setTextColor(Color.YELLOW);
+//            }
+//        });
+//        layoutTextColor.findViewById(R.id.viewTextColor3).setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//                selectedTextColor = "#FFFFFF";
+//                imageTextColor3.setImageResource(R.drawable.ic_done2);
+//                imageTextColor1.setImageResource(0);
+//                imageTextColor2.setImageResource(0);
+//                imageTextColor4.setImageResource(0);
+//                imageTextColor5.setImageResource(0);
+//                inputNoteText.setTextColor(Color.GREEN);
+//            }
+//        });
+//        layoutTextColor.findViewById(R.id.viewTextColor4).setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//                selectedTextColor = "#FFFFFF";
+//                imageTextColor4.setImageResource(R.drawable.ic_done2);
+//                imageTextColor1.setImageResource(0);
+//                imageTextColor2.setImageResource(0);
+//                imageTextColor3.setImageResource(0);
+//                imageTextColor5.setImageResource(0);
+//                inputNoteText.setTextColor(Color.MAGENTA);
+//            }
+//        });
+//        layoutTextColor.findViewById(R.id.viewTextColor5).setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//                selectedTextColor = "#FFFFFF";
+//                imageTextColor5.setImageResource(R.drawable.ic_done2);
+//                imageTextColor1.setImageResource(0);
+//                imageTextColor2.setImageResource(0);
+//                imageTextColor3.setImageResource(0);
+//                imageTextColor4.setImageResource(0);
+//                inputNoteText.setTextColor(Color.BLUE);
+//            }
+//        });
+//    }
+
+
+
     private void initNote(){
         final LinearLayout layoutNote = findViewById(R.id.layoutNote);
         final BottomSheetBehavior<LinearLayout> bottomSheetBehavior = BottomSheetBehavior.from(layoutNote);
@@ -131,6 +219,7 @@ public class CreateNote extends AppCompatActivity {
                 }
             }
         });
+
 
         final ImageView imageColor1 = layoutNote.findViewById(R.id.imageColor1);
         final ImageView imageColor2 = layoutNote.findViewById(R.id.imageColor2);
@@ -183,6 +272,7 @@ public class CreateNote extends AppCompatActivity {
                 imageColor3.setImageResource(0);
                 imageColor1.setImageResource(0);
                 imageColor5.setImageResource(0);
+
             }
         });
 
@@ -199,6 +289,5 @@ public class CreateNote extends AppCompatActivity {
         });
 
     }
-
 
 }
