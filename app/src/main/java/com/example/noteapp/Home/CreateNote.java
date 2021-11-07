@@ -27,6 +27,8 @@ public class CreateNote extends AppCompatActivity {
     private ImageView img_More;
     private TextView tv_dateTime;
     private EditText inputNoteTitle, inputNoteText;
+    private String selectedNoteColor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +80,7 @@ public class CreateNote extends AppCompatActivity {
                 .format(new Date())
         );
 
+        selectedNoteColor = "#CBDFBD";
         initNote();
     }
     private void saveNote(){
@@ -93,6 +96,7 @@ public class CreateNote extends AppCompatActivity {
         note.setTitle(inputNoteTitle.getText().toString());
         note.setDateTime(tv_dateTime.getText().toString());
         note.setNoteText(inputNoteText.getText().toString());
+        note.setColor(selectedNoteColor);
 
         @SuppressLint("StaticFieldLeak")
         class SaveNoteTask extends AsyncTask<Void, Void, Void>{
@@ -127,5 +131,74 @@ public class CreateNote extends AppCompatActivity {
                 }
             }
         });
+
+        final ImageView imageColor1 = layoutNote.findViewById(R.id.imageColor1);
+        final ImageView imageColor2 = layoutNote.findViewById(R.id.imageColor2);
+        final ImageView imageColor3 = layoutNote.findViewById(R.id.imageColor3);
+        final ImageView imageColor4 = layoutNote.findViewById(R.id.imageColor4);
+        final ImageView imageColor5 = layoutNote.findViewById(R.id.imageColor5);
+
+        layoutNote.findViewById(R.id.viewColor1).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                selectedNoteColor = "#80C4C4C4";
+                imageColor1.setImageResource(R.drawable.ic_done);
+                imageColor2.setImageResource(0);
+                imageColor3.setImageResource(0);
+                imageColor4.setImageResource(0);
+                imageColor5.setImageResource(0);
+            }
+        });
+
+        layoutNote.findViewById(R.id.viewColor2).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                selectedNoteColor = "#CBDFBD";
+                imageColor2.setImageResource(R.drawable.ic_done);
+                imageColor1.setImageResource(0);
+                imageColor3.setImageResource(0);
+                imageColor4.setImageResource(0);
+                imageColor5.setImageResource(0);
+            }
+        });
+
+        layoutNote.findViewById(R.id.viewColor3).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                selectedNoteColor = "#90E0EF";
+                imageColor3.setImageResource(R.drawable.ic_done);
+                imageColor2.setImageResource(0);
+                imageColor1.setImageResource(0);
+                imageColor4.setImageResource(0);
+                imageColor5.setImageResource(0);
+            }
+        });
+
+        layoutNote.findViewById(R.id.viewColor4).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                selectedNoteColor = "#e76f51";
+                imageColor4.setImageResource(R.drawable.ic_done);
+                imageColor2.setImageResource(0);
+                imageColor3.setImageResource(0);
+                imageColor1.setImageResource(0);
+                imageColor5.setImageResource(0);
+            }
+        });
+
+        layoutNote.findViewById(R.id.viewColor5).setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                selectedNoteColor = "#FFB703";
+                imageColor5.setImageResource(R.drawable.ic_done);
+                imageColor2.setImageResource(0);
+                imageColor3.setImageResource(0);
+                imageColor4.setImageResource(0);
+                imageColor1.setImageResource(0);
+            }
+        });
+
     }
+
+
 }

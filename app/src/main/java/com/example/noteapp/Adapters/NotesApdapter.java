@@ -1,13 +1,14 @@
 package com.example.noteapp.Adapters;
 
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.noteapp.Entities.Note;
 import com.example.noteapp.R;
 
@@ -16,7 +17,6 @@ import java.util.List;
 public class NotesApdapter extends RecyclerView.Adapter<NotesApdapter.NoteViewHolder>{
 
     private List<Note> notes;
-
     public NotesApdapter(List<Note> notes) {
         this.notes = notes;
     }
@@ -50,15 +50,26 @@ public class NotesApdapter extends RecyclerView.Adapter<NotesApdapter.NoteViewHo
 
     static class NoteViewHolder extends RecyclerView.ViewHolder{
         TextView textTitle, textDateTime;
+        LinearLayout layoutNote;
+
         NoteViewHolder(@NonNull View itemView) {
             super(itemView);
             textTitle = itemView.findViewById(R.id.textTitle);
             textDateTime = itemView.findViewById(R.id.textDateTime);
+            layoutNote = itemView.findViewById(R.id.layoutNote);
         }
 
         void setNote(Note note){
             textTitle.setText((note.getTitle()));
             textDateTime.setText(note.getDateTime());
+
+            GradientDrawable gradientDrawable = (GradientDrawable) layoutNote.getBackground();
+            if(note.getColor() != null){
+                gradientDrawable.setColor(Color.parseColor(note.getColor()));
+            }
+            else{
+                gradientDrawable.setColor(Color.parseColor("#CBDFBD"));
+            }
         }
     }
 }

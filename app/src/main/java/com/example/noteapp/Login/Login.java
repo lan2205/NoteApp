@@ -2,17 +2,13 @@ package com.example.noteapp.Login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
+
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-
 import com.example.noteapp.ForgotPassword.ForgotPassword;
 import com.example.noteapp.Home.Home;
 import com.example.noteapp.R;
@@ -56,5 +52,5 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        }
+    }
 }
