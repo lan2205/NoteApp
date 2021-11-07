@@ -60,10 +60,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.204" />
+        app:layout_constraintVertical_bias="0.205" />
 
     <TextView
         android:id="@+id/textView5"
@@ -72,7 +72,7 @@
         android:layout_marginStart="5dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Don’t have an account ?"
-        android:textColor="@color/white"
+        android:textColor="@color/white_75"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_regular"
         android:text="Remember Me"
-        android:textColor="@color/white"
+        android:textColor="@color/white_75"
         android:textSize="12dp"
         android:checked="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -132,6 +132,7 @@
         android:layout_height="45dp"
         android:background="@drawable/textview_backgroud"
         android:ems="20"
+        android:fontFamily="@font/poppins"
         android:paddingLeft="20dp"
         android:hint="Enter Username"
         android:textSize="15dp"
@@ -149,6 +150,7 @@
         android:background="@drawable/textview_backgroud"
         android:ems="20"
         android:hint="Enter Password"
+        android:fontFamily="@font/poppins"
         android:paddingLeft="20dp"
         android:textColor="@color/black"
         android:textSize="15dp"
