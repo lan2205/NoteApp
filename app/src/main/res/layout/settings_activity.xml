@@ -378,6 +378,7 @@
                     android:textColor="@color/white_75"/>
 
                 <ImageView
+                    android:id="@+id/ic_gotoTrash"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@drawable/ic_arrow_right"/>
