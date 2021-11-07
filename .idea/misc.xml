@@ -56,12 +56,25 @@
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/login.xml" value="0.2234375" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/layout/settings_activity.xml" value="0.187890625" />
         <entry key="..\:/Test/NoteApp/app/src/main/res/xml/root_preferences.xml" value="0.190625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable-v24/background_text_color2.xml" value="0.187890625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable-v24/background_text_color3.xml" value="0.187890625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable-v24/background_text_color4.xml" value="0.187890625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable-v24/background_text_color5.xml" value="0.187890625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/back_ground_search.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_note_color1.xml" value="0.187890625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_note_color3.xml" value="0.187890625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_note_color4.xml" value="0.187890625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_note_color5.xml" value="0.187890625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_seaarch2.xml" value="0.26205128205128203" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_search.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_text_color1.xml" value="0.187890625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/ic_done.xml" value="0.199609375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/ic_done2.xml" value="0.199609375" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/textview_backgroud.xml" value="0.26205128205128203" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_create_note.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.234375" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_forgot_password1.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_forgot_password2.xml" value="0.4" />
@@ -74,6 +87,7 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_search.xml" value="0.12158054711246201" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_setting.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_start.xml" value="0.234375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/layout_miscellaneous.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/settings_activity.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/NoteApp/app/src/main/res/layout/test.xml" value="0.234375" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Team20/app/src/main/res/layout/activity_forgot_password.xml" value="0.2" />
