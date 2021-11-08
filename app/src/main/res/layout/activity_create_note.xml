@@ -68,6 +68,7 @@
             <View
                 android:id="@+id/bar_color_note"
                 android:layout_width="@dimen/_3sdp"
+                android:id="@+id/indicator"
                 android:layout_height="25dp"
                 android:layout_marginStart="@dimen/_12sdp"
                 android:background="@drawable/background_indicator"

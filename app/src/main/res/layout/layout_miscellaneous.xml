@@ -314,110 +314,6 @@
 
     </LinearLayout>
 
-<!--    <LinearLayout-->
-<!--        android:id="@+id/layoutTextColor2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:padding="5dp"-->
-<!--        android:orientation="horizontal">-->
-
-<!--        <FrameLayout-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1">-->
-
-<!--            <View-->
-<!--                android:id="@+id/viewTextColor6"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:background="@drawable/background_note_color4" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/imageTextColor6"-->
-<!--                android:layout_width="44dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:contentDescription="@string/app_name"-->
-<!--                android:padding="@dimen/_10sdp" />-->
-<!--        </FrameLayout>-->
-
-<!--        <FrameLayout-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1">-->
-
-<!--            <View-->
-<!--                android:id="@+id/viewTextColor7"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:background="@drawable/background_note_color4" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/imageTextColor7"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:contentDescription="@string/app_name"-->
-<!--                android:padding="@dimen/_10sdp" />-->
-<!--        </FrameLayout>-->
-
-<!--        <FrameLayout-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1">-->
-
-<!--            <View-->
-<!--                android:id="@+id/viewTextColor8"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:background="@drawable/background_note_color4" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/imageTextColor8"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:contentDescription="@string/app_name"-->
-<!--                android:padding="@dimen/_10sdp" />-->
-<!--        </FrameLayout>-->
-
-<!--        <FrameLayout-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1">-->
-
-<!--            <View-->
-<!--                android:id="@+id/viewTextColor9"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:background="@drawable/background_note_color4" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/imageTextColor9"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:contentDescription="@string/app_name"-->
-<!--                android:padding="@dimen/_10sdp" />-->
-<!--        </FrameLayout>-->
-
-<!--        <FrameLayout-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1">-->
-
-<!--            <View-->
-<!--                android:id="@+id/viewTextColor10"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:background="@drawable/background_note_color4" />-->
-
-<!--            <ImageView-->
-<!--                android:id="@+id/imageTextColor10"-->
-<!--                android:layout_width="@dimen/_35sdp"-->
-<!--                android:layout_height="@dimen/_35sdp"-->
-<!--                android:contentDescription="@string/app_name"-->
-<!--                android:padding="@dimen/_10sdp" />-->
-<!--        </FrameLayout>-->
-
-<!--    </LinearLayout>-->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -436,63 +332,56 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="36dp"
-            android:background="@drawable/gray_background_layout"
-            android:layout_weight="1">
-            <ImageView
-                android:paddingStart="10dp"
-                android:id="@+id/noteHeading"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_heading" />
 
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gray_background_layout">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/ic_heading"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/poppins"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:paddingStart="45dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+
                 android:text="Heading"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_12sdp" />/>
 
-        </FrameLayout>
+        </LinearLayout>
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="36dp"
-            android:background="@drawable/gray_background_layout"
-            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gray_background_layout">
+
             <ImageView
-                android:id="@+id/noteNewPage"
-                android:layout_width="@dimen/_28sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:contentDescription="@string/app_name"
-                android:paddingStart="10dp"
-                android:src="@drawable/ic_add_page" />
-
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/ic_add_page"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:includeFontPadding="false"
-                android:text="Page"
-                android:maxLines="1"
-                android:paddingStart="45dp"
-                android:layout_marginTop="7dp"
-                android:ellipsize="end"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
 
-        </FrameLayout>
+                android:text="Page"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -504,63 +393,54 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="36dp"
-            android:background="@drawable/gray_background_layout"
-            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gray_background_layout">
 
             <ImageView
-                android:paddingStart="10dp"
-                android:id="@+id/noteTimeline"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_timeline" />
-
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/ic_timeline"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="45dp"
-                android:layout_marginTop="6dp"
-                android:fontFamily="@font/poppins"
-                android:includeFontPadding="false"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+
                 android:text="Timeline"
-                android:maxLines="1"
-                android:ellipsize="end"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_12sdp" />/>
 
-        </FrameLayout>
+        </LinearLayout>
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="38dp"
-            android:background="@drawable/gray_background_layout"
-            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gray_background_layout">
+
             <ImageView
-                android:id="@+id/noteCalendar"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_calendar" />
-
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/ic_calendar"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:includeFontPadding="false"
-                android:text="Calendar"
-                android:maxLines="1"
-                android:paddingStart="45dp"
-                android:layout_marginTop="6dp"
-                android:ellipsize="end"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
 
-        </FrameLayout>
+                android:text="Calendar"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -572,115 +452,142 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="36dp"
-            android:background="@drawable/gray_background_layout"
-            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gray_background_layout">
 
             <ImageView
-                android:paddingStart="10dp"
-                android:id="@+id/noteTodolist"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_to_do_list" />
-
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/ic_to_do_list"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="45dp"
-                android:layout_marginTop="6dp"
-                android:fontFamily="@font/poppins"
-                android:includeFontPadding="false"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+
                 android:text="To-do-list"
-                android:maxLines="1"
-                android:ellipsize="end"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_12sdp" />/>
 
-        </FrameLayout>
+        </LinearLayout>
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="36dp"
-            android:background="@drawable/gray_background_layout"
-            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gray_background_layout">
+
             <ImageView
-                android:id="@+id/noteTable"
-                android:layout_width="@dimen/_28sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:contentDescription="@string/app_name"
-                android:paddingStart="4dp"
-                android:src="@drawable/ic_table" />
-
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/ic_table"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:includeFontPadding="false"
-                android:text="Calendar"
-                android:maxLines="1"
-                android:paddingStart="45dp"
-                android:layout_marginTop="6dp"
-                android:ellipsize="end"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
 
-        </FrameLayout>
+                android:text="Table"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layoutQuotes"
-        android:layout_width="match_parent"
+        android:layout_width="185dp"
         android:layout_height="@dimen/_30sdp"
         android:layout_margin="@dimen/_5sdp"
+        android:layout_marginStart="5dp"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="36dp"
-            android:background="@drawable/gray_background_layout"
-            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gray_background_layout">
 
             <ImageView
-                android:paddingStart="10dp"
-                android:id="@+id/noteQuotes"
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_quotes" />
-
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/ic_quotes"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="45dp"
-                android:layout_marginTop="6dp"
-                android:fontFamily="@font/poppins"
-                android:includeFontPadding="false"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginStart="14dp"
                 android:text="Quotes"
-                android:maxLines="1"
-                android:ellipsize="end"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_12sdp" />/>
 
-        </FrameLayout>
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:fontFamily="@font/poppins"
-        android:includeFontPadding="false"
-        android:text=""
-        android:textColor="@color/white_75"
-        android:textSize="16dp" />
-
+        </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAddImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_add_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:text="Add Image"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white_75"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAddURL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_url" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:text="Add URL"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white_75"/>
+
+    </LinearLayout>
+
+</LinearLayout>

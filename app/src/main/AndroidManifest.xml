@@ -27,6 +27,10 @@
         <activity
             android:name=".Home.Search"
             android:exported="false" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff5a322eadd4632ec589a2a01a4ad19f68d13d3
         <activity
             android:name=".Home.CreateNote"
             android:exported="false" />
