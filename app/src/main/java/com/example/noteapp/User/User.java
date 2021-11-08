@@ -1,6 +1,8 @@
 package com.example.noteapp.User;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
     private int id;
     private String full_name;
     private String username;
@@ -45,5 +47,16 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", full_name='" + full_name + '\'' +
+                ", username='" + username + '\'' +
+                ", pass_word='" + pass_word + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.noteapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -10,6 +11,7 @@
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -27,10 +29,6 @@
         <activity
             android:name=".Home.Search"
             android:exported="false" />
-<<<<<<< HEAD
-=======
-
->>>>>>> 0ff5a322eadd4632ec589a2a01a4ad19f68d13d3
         <activity
             android:name=".Home.CreateNote"
             android:exported="false" />

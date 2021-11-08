@@ -8,16 +8,13 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
-<<<<<<< HEAD
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-=======
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
->>>>>>> 0ff5a322eadd4632ec589a2a01a4ad19f68d13d3
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -42,7 +39,6 @@ public class CreateNote extends AppCompatActivity {
     private ImageView img_More;
     private TextView tv_dateTime;
     private EditText inputNoteTitle, inputNoteText;
-<<<<<<< HEAD
     private String selectedNoteColor;
     private String selectedImagePath;
 
@@ -50,10 +46,9 @@ public class CreateNote extends AppCompatActivity {
 
     private static final int REQUEST_CODE_STORAGE_PERMISSION = 1;
     private static final int REQUEST_CODE_SELECT_IMAGE = 2;
-=======
-    private String selectedNoteColor, selectedTextColor;
+
+    private String selectedTextColor;
     private View indicator;
->>>>>>> 0ff5a322eadd4632ec589a2a01a4ad19f68d13d3
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,11 +60,8 @@ public class CreateNote extends AppCompatActivity {
         tv_dateTime = (TextView)findViewById(R.id.textDateTime);
         inputNoteTitle = (EditText)findViewById(R.id.inputNoteTitle);
         inputNoteText = (EditText)findViewById(R.id.inputNote);
-<<<<<<< HEAD
         img_Note = (ImageView)findViewById(R.id.imageNote);
-=======
         indicator = findViewById(R.id.indicator);
->>>>>>> 0ff5a322eadd4632ec589a2a01a4ad19f68d13d3
 
         img_backHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,22 +103,14 @@ public class CreateNote extends AppCompatActivity {
                 .format(new Date())
         );
 
-        selectedNoteColor = "#CBDFBD";
-<<<<<<< HEAD
-        selectedImagePath="";
-
         if(getIntent().getBooleanExtra("isVieworUpdate",false)){
             alreadyAvailableNote = (Note) getIntent().getSerializableExtra("note");
             setVieworUpdate();
         }
-
-        initNote();
-=======
         selectedTextColor = "#FFFFFF";
+        selectedNoteColor = "#CBDFBD";
+        selectedImagePath="";
         initNote();
-        setIndicatorColor();
->>>>>>> 0ff5a322eadd4632ec589a2a01a4ad19f68d13d3
-
     }
 
     private void saveNote(){
@@ -167,6 +151,7 @@ public class CreateNote extends AppCompatActivity {
         }
         new SaveNoteTask().execute();
     }
+
     private void initNote(){
         final LinearLayout layoutNote = findViewById(R.id.layoutNote);
         final BottomSheetBehavior<LinearLayout> bottomSheetBehavior = BottomSheetBehavior.from(layoutNote);
@@ -320,22 +305,22 @@ public class CreateNote extends AppCompatActivity {
             }
         });
 
-        if(alreadyAvailableNote != null && alreadyAvailableNote.getColor() != null && !alreadyAvailableNote.getColor().trim().isEmpty()){
-            switch (alreadyAvailableNote.getColor()){
-                case "#CBDFBD":
-                    layoutNote.findViewById(R.id.viewColor2).performClick();
-                    break;
-                case "#90E0EF":
-                    layoutNote.findViewById(R.id.viewColor3).performClick();
-                    break;
-                case "#e76f51":
-                    layoutNote.findViewById(R.id.viewColor4).performClick();
-                    break;
-                case "#FFB703":
-                    layoutNote.findViewById(R.id.viewColor5).performClick();
-                    break;
-            }
-        }
+//        if(alreadyAvailableNote != null && alreadyAvailableNote.getColor() != null && !alreadyAvailableNote.getColor().trim().isEmpty()){
+//            switch (alreadyAvailableNote.getColor()){
+//                case "#CBDFBD":
+//                    layoutNote.findViewById(R.id.viewColor2).performClick();
+//                    break;
+//                case "#90E0EF":
+//                    layoutNote.findViewById(R.id.viewColor3).performClick();
+//                    break;
+//                case "#e76f51":
+//                    layoutNote.findViewById(R.id.viewColor4).performClick();
+//                    break;
+//                case "#FFB703":
+//                    layoutNote.findViewById(R.id.viewColor5).performClick();
+//                    break;
+//            }
+//        }
         layoutNote.findViewById(R.id.layoutAddCover).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -355,20 +340,17 @@ public class CreateNote extends AppCompatActivity {
             }
         });
     }
-<<<<<<< HEAD
-    private void selectImage(){
+
+    private void selectImage() {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        if(intent.resolveActivity(getPackageManager()) != null){
-            startActivityForResult(intent,REQUEST_CODE_SELECT_IMAGE);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, REQUEST_CODE_SELECT_IMAGE);
         }
-=======
-    private void setIndicatorColor(){
-        GradientDrawable gradientDrawable =(GradientDrawable) indicator.getBackground();
-        gradientDrawable.setColor(Color.parseColor(selectedNoteColor));
     }
 
->>>>>>> 0ff5a322eadd4632ec589a2a01a4ad19f68d13d3
-
+    private void setIndicatorColor(){
+        GradientDrawable gradientDrawable = (GradientDrawable) indicator.getBackground();
+        gradientDrawable.setColor(Color.parseColor(selectedNoteColor));
     }
 
     @Override

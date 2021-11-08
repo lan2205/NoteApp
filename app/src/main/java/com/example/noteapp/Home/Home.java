@@ -51,8 +51,6 @@ public class Home extends AppCompatActivity implements NotesListener {
             }
         });
 
-<<<<<<< HEAD
-=======
         ImageView imageAddNoteMain = findViewById(R.id.newNote);
         imageAddNoteMain.setOnClickListener((v)->{
             startActivityForResult(new Intent(getApplicationContext(), CreateNote.class),
@@ -60,8 +58,6 @@ public class Home extends AppCompatActivity implements NotesListener {
             );
         });
 
-
->>>>>>> 0ff5a322eadd4632ec589a2a01a4ad19f68d13d3
         notesRecyclerView = findViewById(R.id.notesRecyclerView);
         notesRecyclerView.setLayoutManager(
                 new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
